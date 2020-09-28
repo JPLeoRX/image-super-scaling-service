@@ -1,13 +1,12 @@
 from flask import Flask
 from flask import request
 from flask import Response
-
 from resources import resourcePing, resourceUpscale
 from message_protocol.upscale_input import parseUpscaleInput
 
+
 app = Flask(__name__)
 
-#-----------------------------------------------------------------------------------------------------------------------
 @app.route('/ping', methods=['GET'])
 def ping():
     output = resourcePing.main()

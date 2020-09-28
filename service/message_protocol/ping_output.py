@@ -1,5 +1,6 @@
 import json
 
+
 class PingOutput:
     def __init__(self, success: bool):
         self.success = success
