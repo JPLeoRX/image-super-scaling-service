@@ -1,0 +1,1 @@
+docker build -t service-ai-image . && docker run --rm -ti -p 7777:7777 --name service-ai-container service-ai-image
