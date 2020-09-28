@@ -1,5 +1,9 @@
 package com.tekleo.tutorial.client;
 
+import com.tekleo.tutorial.client.message_protocol.PingOutput;
+import com.tekleo.tutorial.client.message_protocol.UpscaleInput;
+import com.tekleo.tutorial.client.message_protocol.UpscaleOutput;
+
 public class Client {
     private static String BASE_URL = "http://localhost:7777";
 

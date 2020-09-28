@@ -1,5 +1,6 @@
-package com.tekleo.tutorial.client;
+package com.tekleo.tutorial.client.message_protocol;
 
+import com.tekleo.tutorial.client.JsonSerializable;
 import lombok.*;
 
 @Getter @AllArgsConstructor @NoArgsConstructor @ToString @EqualsAndHashCode
