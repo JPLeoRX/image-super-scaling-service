@@ -22,11 +22,13 @@ public class ClientTest {
 
     @Test
     public void upscale() throws Exception {
-        String inputFilePath = "/Users/leo/tekleo/image-super-scaling-service/sample-images/t7.jpg";
-        String outputFilePath = "/Users/leo/tekleo/image-super-scaling-service/sample-images/t7_up.jpg";
+        String inputFilePath = "/Users/leo/tekleo/image-super-scaling-service/sample-images/t5.jpg";
+        String outputFilePath = "/Users/leo/tekleo/image-super-scaling-service/sample-images/t5_up.jpg";
         File inputFile = new File(inputFilePath);
         UpscaleInput input = new UpscaleInput(inputFile);
         UpscaleOutput output = Client.upscale(input);
+        assertNotNull(output);
+        assertFalse(output.getImageBase64().isEmpty());
         File outputFile = new File(outputFilePath);
         FileUtils.writeByteArrayToFile(outputFile, output.toBytesArray());
     }
